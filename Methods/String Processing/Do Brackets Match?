@@ -1,0 +1,24 @@
+public boolean bracketsMatch(String brackets)
+{
+    int openedPair = 0;
+    int openBrace = 0;
+    int closeBrace = 0;
+    
+    for(int i = 0, j = brackets.length() ; i < j ; i++) {
+        char c = brackets.charAt(i);
+        if(c == '{') {
+            openedPair++;
+            openBrace++;
+        }
+        else if(c == '}' && openedPair > 0) {
+            openedPair--;
+            closeBrace++;
+        } else
+            closeBrace++;
+    }
+    
+    boolean doMatch = (openedPair == 0 && (openBrace - closeBrace) == 0) ? true : false;
+    
+    return doMatch;
+    
+}
