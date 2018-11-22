@@ -1,0 +1,11 @@
+public class CastingToDouble extends ConsoleProgram
+{
+    public void run()
+    {
+        int firstInt = readInt("First Int: ");
+        int secondInt = readInt("Second Int: ");
+        double ans = (double) firstInt / secondInt;
+        
+        System.out.println(ans);
+    }
+}
