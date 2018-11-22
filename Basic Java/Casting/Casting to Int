@@ -1,0 +1,9 @@
+public class CastingToInt extends ConsoleProgram
+{
+    public void run()
+    {
+        double myDouble = readDouble("Please input your double: ");
+        int i = (int) myDouble;
+        System.out.println(i);
+    }
+}
