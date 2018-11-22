@@ -1,0 +1,9 @@
+public class Variables extends ConsoleProgram
+{
+
+    public void run()
+    {
+        System.out.println("2018" + "year");
+    }
+
+}
