@@ -1,0 +1,12 @@
+public class Factorial extends ConsoleProgram
+{
+    public void run()
+    {
+        int i = readInt("Find factorial of...");
+        int j = 1;
+        for (; i > 0 ; i--) {
+            j *= i;
+        }
+        System.out.println(j);
+    }
+}
