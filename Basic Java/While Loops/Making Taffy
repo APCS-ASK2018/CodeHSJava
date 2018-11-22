@@ -1,0 +1,20 @@
+public class Taffy extends ConsoleProgram
+{
+    public void run()
+    {
+        System.out.println("Starting Taffy Timer...");
+        int i = readInt("Enter the temperature: ");
+        
+        while( i < 270 ) {
+            System.out.println("Keep cooking!");
+            
+            System.out.println("The mixture isn't ready yet.");
+            i = readInt("Enter the temperature: ");
+        }
+        
+        if(i >= 330)
+                System.out.println("You burned the taffy!");
+        else
+            System.out.println("Your taffy is ready for the next step!");
+    }
+}
