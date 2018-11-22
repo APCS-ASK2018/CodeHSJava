@@ -1,0 +1,8 @@
+public String repeatString(String text, int numReps)
+{
+    String output = "";
+    for(int i = numReps ; i > 0 ; i--) {
+        output += text;
+    }
+    return output;
+}
