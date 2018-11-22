@@ -1,0 +1,12 @@
+public String altCase(String text)
+{
+    String result = "";
+    for(int i = 0, j = text.length() ; i < j ; i++) {
+        if(i % 2 == 0) {
+            result += String.valueOf(Character.toUpperCase(text.charAt(i)));
+        } else {
+            result += String.valueOf(Character.toLowerCase(text.charAt(i)));
+        }
+    }
+    return result;
+}
