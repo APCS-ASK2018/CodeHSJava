@@ -1,0 +1,6 @@
+public int sumFrom(int start, int end)
+{
+    int bigSum = (end - 1) * end;
+    int smallSum = (start - 1) * start;
+    return (bigSum - smallSum)/2;
+}
