@@ -1,0 +1,21 @@
+public class FindMinimum extends ConsoleProgram
+{
+    public void run()
+    {
+        // Ask the user for three ints and 
+        // print out the minimum.
+        int a = readInt("Enter first number: ");
+        int b = readInt("Enter second number: ");
+        int c = readInt("Enter third number: ");
+        
+        int ans;
+        if (a < b && a < c)
+            ans = a;
+        else if (b < a && b < c)
+            ans = b;
+        else
+            ans = c;
+            
+        System.out.println(ans);
+    }
+}
