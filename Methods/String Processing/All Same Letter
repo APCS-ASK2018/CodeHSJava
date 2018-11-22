@@ -1,0 +1,9 @@
+public boolean allSameLetter(String str)
+{
+    char c = str.charAt(0);
+    for(int i = 1, j = str.length() ; i < j ; i++) {
+        if (str.charAt(i) != c)
+            return false;
+    }
+    return true;
+}
