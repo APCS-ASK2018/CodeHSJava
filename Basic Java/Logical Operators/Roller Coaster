@@ -1,0 +1,11 @@
+public class RollerCoaster extends ConsoleProgram
+{
+    public void run()
+    {
+        boolean ans1 = readBoolean("Are you tall enough?");
+        boolean ans2 = readBoolean("Are you old enough?");
+        
+        boolean canRide = (ans1 && ans2) ? true : false;
+        System.out.println(canRide);
+    }
+}
