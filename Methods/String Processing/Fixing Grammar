@@ -1,0 +1,5 @@
+public String useProperGrammar(String text)
+{
+    // Fix the grammar of the text   
+    return text.replace("2" , "to");
+}
