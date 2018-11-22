@@ -1,0 +1,13 @@
+public class Poetry extends ConsoleProgram
+{
+    public void run()
+    {
+        String haiku = "asdf\nqwer\nzxcv";
+        String acrostic = "1\n2\n3\n4\n5";
+        System.out.println(haiku);
+        System.out.println(acrostic);
+        
+        String user = readLine("ur poem");
+        System.out.println(user);
+    }
+}
