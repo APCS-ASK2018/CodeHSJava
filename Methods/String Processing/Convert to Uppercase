@@ -1,0 +1,9 @@
+public String toUpperCase(String str)
+{
+    String result = "";
+    for(int i = 0, j = str.length() ; i < j ; i++) {
+        char cap = Character.toUpperCase( str.charAt(i) );
+        result += Character.toString(cap);
+    }
+    return result;
+}
