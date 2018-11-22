@@ -1,0 +1,21 @@
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        printMessage("Karel","Dog",5);
+        printMessage("Romeo","Juliet",12);
+    }
+    
+    public void printMessage(String lineOne, String lineTwo, int numLines)
+    {
+        boolean l1 = true;
+        for(int i = numLines ; i > 0 ; i--) {
+            if (l1) {
+                System.out.println(lineOne);
+            } else {
+                System.out.println(lineTwo);
+            }
+            l1 = !l1;
+        }
+    }
+}
