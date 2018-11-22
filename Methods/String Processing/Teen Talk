@@ -1,0 +1,9 @@
+public String teenTalk(String sentence)
+{
+    String[] words = sentence.split(" ");
+    String result = "";
+    for(String w : words) {
+        result += w + " like ";
+    }
+    return result.substring(0,result.length()-6);
+}
