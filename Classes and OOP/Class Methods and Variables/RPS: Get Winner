@@ -1,0 +1,15 @@
+private String getWinner(String user, String computer)
+{
+    // Return the proper string for the result.
+    String USER_PLAYER = "User wins!";
+    String COMPUTER_PLAYER = "Computer wins!";
+    String TIE = "Tie";
+
+    if(
+        (user.equals("rock") && computer.equals("paper"))
+        || (user.equals("paper") && computer.equals("scissors"))
+        || (user.equals("scissors") && computer.equals("rock"))
+        ) return COMPUTER_PLAYER;
+    if( user.equals(computer) ) return TIE;
+    return USER_PLAYER;
+}
