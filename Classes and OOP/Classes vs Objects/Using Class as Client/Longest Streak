@@ -1,0 +1,31 @@
+public class LongestStreak extends ConsoleProgram
+{
+    public static final int FLIPS = 100;
+    
+    public void run()
+    {
+        int headCount = 0;
+        int headStreak = 0;
+        int longestHeadStreak = 0;
+        
+        for(int i = 0 ; i < FLIPS ; i++) {
+            if( Randomizer.nextBoolean() ) {
+                // Is head
+                headCount++;
+                headStreak++;
+                if( headStreak > longestHeadStreak ) {
+                    longestHeadStreak = headStreak;
+                }
+                System.out.println("Heads");
+            } else {
+                // Is tail
+                headStreak = 0;
+                System.out.println("Tails");
+            }
+        }
+        
+        System.out.println("Longest streak of heads: " + longestHeadStreak);
+        
+
+    }
+}
