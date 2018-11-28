@@ -1,0 +1,25 @@
+public class Fraction implements Comparable<Fraction>
+{
+    private int num;
+    private int denum;
+    
+    public Fraction(int down, int up) {
+        num = up;
+        denum = down;
+    }
+    
+    public int compareTo(Fraction other) {
+        double res = other.getVal() - getVal();
+        if(res == 0) return 0;
+        if(res < 0) return -1;
+        return 1;
+    }
+    
+    public boolean equals(Object other) {
+        return other instanceof Fraction && compareTo( (Fraction) other) == 0;
+    }
+    
+    public double getVal() {
+        return num / denum;
+    }
+}
