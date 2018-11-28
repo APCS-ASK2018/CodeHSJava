@@ -1,0 +1,13 @@
+public class UnitCircle extends ConsoleProgram
+{
+    public void run()
+    {
+        // Write your code here!
+        System.out.println("Radians: (cos, sin)");
+        
+        for(double i = 0 ; i < 2 * Math.PI ; i += 0.25 * Math.PI) {
+            double angle = (int) (100 * i) / 100.0;
+            System.out.println(angle + ": " + Math.cos(angle) + ", " + Math.sin(angle));
+        }
+    }
+}
