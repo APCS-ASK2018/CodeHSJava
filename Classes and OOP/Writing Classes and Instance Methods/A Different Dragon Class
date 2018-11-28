@@ -1,0 +1,41 @@
+public class Dragon 
+{
+    private String name;
+    private int level;
+    private boolean canBreatheFire;
+    
+    // Write the constructor here!
+    public Dragon(String name, int level) {
+        this.name = name;
+        this.level = level;
+        canBreatheFire = (level < 70) ? false : true;
+    }
+    
+    // Put getters here
+    public String getName() {return name;}
+    public int getLevel() {return level;}
+    public boolean isFireBreather() {return canBreatheFire;}
+    
+    // Put other methods here
+    public void gainExperience() {
+        level+=10;
+        canBreatheFire = (level < 70) ? false : true;
+    }
+    
+    public void attack() {
+        if(canBreatheFire) {
+            System.out.println(">>>>>>>>>>");
+            System.out.println(">>>>>>>>>>>>>>");
+            System.out.println(">>>>>>>>>>>>>>");
+            System.out.println(">>>>>>>>>>");
+        } else
+            System.out.println("~ ~ ~");
+    }
+    
+
+    // String representation of the object
+    public String toString()
+    {
+        return "Dragon " + name + " is at level " + level;
+    }
+}
