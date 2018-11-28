@@ -1,0 +1,15 @@
+public class Fraction
+{
+       private int num, denom;
+       
+       public Fraction(int num, int denom) {
+           this.num = num;
+           this.denom = denom;
+       }
+       
+       public int getNumerator() {return num;}
+       public int getDenominator() {return denom;}
+       
+       public void setNumerator(int x) {num = x;}
+       public void setDenominator(int x) {denom = x;}
+}
