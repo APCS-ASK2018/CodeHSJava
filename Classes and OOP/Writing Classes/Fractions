@@ -1,0 +1,13 @@
+public class Fraction
+{
+    private int numerator, denominator;
+    
+    public Fraction(int top, int down) {
+        numerator = top;
+        denominator = down;
+    }
+    
+    public String toString() {
+        return numerator + "/" + denominator;
+    }
+}
