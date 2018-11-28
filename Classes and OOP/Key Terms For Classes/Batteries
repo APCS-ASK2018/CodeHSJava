@@ -1,0 +1,18 @@
+public class Battery
+{
+    static double totalVoltage;
+    static int numOfBatteries;
+    private double voltage;
+    
+    public Battery(double voltage)
+    {
+        this.voltage = voltage;
+        numOfBatteries++;
+        totalVoltage += voltage;
+    }
+    
+    public double getVoltage()
+    {
+        return this.voltage;
+    }
+}
