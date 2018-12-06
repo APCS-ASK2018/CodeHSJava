@@ -1,0 +1,12 @@
+public ArrayList<String> getAllChoices(String[] flavors, String[] toppings)
+{
+    // Write your code here!
+    ArrayList<String> choices = new ArrayList<String>();
+    
+    for(String flav : flavors) {
+        for(String top : toppings) {
+            choices.add(flav + " with " + top + " on top");
+        }
+    }
+    return choices;
+}
