@@ -1,0 +1,12 @@
+public List<Book> filterBooks(List<Book> readingList, int maxPages)
+{
+    // Remove all Books from the readingList that have more
+    // than maxPages pages. Return the resulting List
+    Iterator<Book> it = readingList.iterator();
+    while(it.hasNext()) {
+        Book book = it.next();
+        if(book.getNumPages() > maxPages)
+            it.remove();
+    }
+    return readingList;
+}
