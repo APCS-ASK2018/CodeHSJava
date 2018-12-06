@@ -1,0 +1,10 @@
+public class FirstArray extends ConsoleProgram
+{
+    public void run()
+    {
+        int[] arr = {2, 4, 6, 8, 10};
+        // Start here!
+        System.out.println(arr[1]);
+        System.out.println(arr[3]);
+    }
+}
