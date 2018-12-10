@@ -1,0 +1,14 @@
+public int findMinimum(int[] numbers, int length)
+{
+    // Base Case: What is the smallest array you can have? What is the minimum value of that array?
+    
+    // Recursive call: How do you find the minimum of the rest of the array?
+    //                 (Not including the last element)
+    
+    // Return: The minimum of (the last element, minimum of the rest of the array)
+    int n = numbers[--length];
+    for(int i = 0; i < length; i++)
+        if(numbers[i] < n)
+            return findMinimum(numbers, length);
+    return n;
+}
